@@ -14,7 +14,7 @@
     ],
   "repository": "https://github.com/P-Phreak/Pyro-FileStreamBot",
   "success_url": "/",
-  "logo": "https://telegra.ph/file/9d63060a06c6fc6def1da.png",
+  "logo": "https://graph.org/file/9d63060a06c6fc6def1da.png",
   "website": "stream.wrench.gq",
   "env": {
       "ENV": {
@@ -86,7 +86,7 @@
   "formation": {
       "web": {
           "quantity": 1,
-          "size": "free"
+          "size": "Eco"
       }
   }
 }
