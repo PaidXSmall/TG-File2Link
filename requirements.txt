@@ -3,3 +3,4 @@ pyrogram<=2.0.93
 aiofiles
 python-dotenv<=0.20.0
 TgCrypto<=1.2.5
+motor
