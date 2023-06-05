@@ -1,5 +1,5 @@
 
-# (c) @OwnYourBotz 
+# (c) @KristyX_TG
 
 
 import asyncio
@@ -45,7 +45,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ @OwnYourBotz Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ @KristyX_TG Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     parse_mode=ParseMode.MARKDOWN,
                     disable_web_page_preview=True
                 )
@@ -55,7 +55,7 @@ async def private_receive_handler(c: Client, m: Message):
                 chat_id=m.chat.id,
                 text="""<i>Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴍᴇ 🔐</i>""",
                 reply_markup=InlineKeyboardMarkup(
-                    [[ InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}") ]]
+                    [[ InlineKeyboardButton("Jᴏɪɴ Nᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}") ]]
                 ),
                 parse_mode=ParseMode.HTML
             )
@@ -63,7 +63,7 @@ async def private_receive_handler(c: Client, m: Message):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** @OwnYourBotz",
+                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss @KristyX_TG**",
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True)
             return
@@ -83,14 +83,14 @@ async def private_receive_handler(c: Client, m: Message):
 <b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
 <b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
 <b>🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ</b>\n
-<i>© @OwnYourBotz </i>"""
+<i>© @PeterXClouD </i>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN, quote=True)
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode=ParseMode.HTML, 
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 📥", url=stream_link)]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ Nᴏᴡ 📥", url=stream_link)]]),
             quote=True
         )
     except FloodWait as e:
@@ -111,7 +111,7 @@ async def channel_receive_handler(bot, broadcast):
                                     Var.PORT,
                                     log_msg.id)
         await log_msg.reply_text(
-            text=f"**Cʜᴀɴɴᴇʟ Nᴀᴍᴇ:** `{broadcast.chat.title}`\n**Cʜᴀɴɴᴇʟ ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** https://t.me/{(await bot.get_me()).username}?start=OwnYourBotz_{str(log_msg.id)}",
+            text=f"**Cʜᴀɴɴᴇʟ Nᴀᴍᴇ:** `{broadcast.chat.title}`\n**Cʜᴀɴɴᴇʟ ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** https://t.me/{(await bot.get_me()).username}?start=KristyX_{str(log_msg.id)}",
             # text=f"**Cʜᴀɴɴᴇʟ Nᴀᴍᴇ:** `{broadcast.chat.title}`\n**Cʜᴀɴɴᴇʟ ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** https://t.me/TeleRoid_File2link_bot?start=OwnYourBotz_{str(log_msg.id)}",
             quote=True,
             parse_mode=ParseMode.MARKDOWN
@@ -120,7 +120,7 @@ async def channel_receive_handler(bot, broadcast):
             chat_id=broadcast.chat.id,
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=f"https://t.me/{(await bot.get_me()).username}?start=OwnYourBotz_{str(log_msg.id)}")]])
+                [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=f"https://t.me/{(await bot.get_me()).username}?start=KristyX_{str(log_msg.id)}")]])
             # [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=f"https://t.me/TeleRoid_File2link_bot?start=OwnYourBotz_{str(log_msg.id)}")]])
         )
     except FloodWait as w:
